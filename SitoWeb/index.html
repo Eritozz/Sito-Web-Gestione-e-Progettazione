@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'economia dei Videogiochi</title>
+  <link rel="shortcut icon" href="./images/mushroom.png" type="image/x-icon">
+  <link rel="stylesheet" href="./Stylesheet/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</head>
+
+<body class="backgroundindex">
+
+  <!--NAVBAR-->
+  <header class="header">
+    <div class="header-container">
+      <nav class="navbar navbar-expand-lg navbar-light indexfont">
+
+        <a class="navbar-brand" href="#"><img src="./images/mushroom.png" class="NavImg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div class="row contenitore_bottoni">
+          <button class="col-6 activated it bottone_lingua btn" id="ITA">Italiano</button>            <!-- Traduzione italiano-->
+          <button class="col-6 en bottone_lingua btn" id="ENG">English</button>                        <!-- Traduzione inglese-->   
+      </div>
+      </nav>
+
+    </div>
+  </header>
+  <!--TITLE-->
+  <div class="title titlediv">
+    <h1 class="indexfont title_main">L'economia dei Videogiochi</h1>
+    <h3 class="indexfont subtitleTr">In questo sito troverete la storia e l'economia delle principali case di produzioni
+      di videogiochi con l'obiettivo di mostrare l'esponenziale crescita del mercato videoludico negli anni</h3>
+  </div>
+  <center>
+    <div class="row">
+      <div class="dimensioneImg col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/ps.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Playstation</h5>
+            <p class="card-text psTr">Storia ed economia di Playstation</p>
+            <a href="Pages/playstation.html" class="btn btn-primary">Info</a>
+          </div>
+        </div>
+      </div>
+      <div class="dimensioneImg col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/nintendoLogo.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Nintendo</h5>
+            <p class="card-text ninTr">Storia ed economia di Nintendo</p>
+            <a href="Pages/nintendo.html" class="btn btn-primary">Info</a>
+          </div>
+        </div>
+      </div>
+      <div class="dimensioneImg col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/xboxLogo.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Xbox</h5>
+            <p class="card-text xbTr">Storia ed economia di Xbox</p>
+            <a href="Pages/xbox.html" class="btn btn-primary">Info</a>
+          </div>
+        </div>
+      </div>
+      <div class="dimensioneImg col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/segaLogo.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Sega</h5>
+            <p class="card-text sgTr">Storia ed economia di Sega</p>
+            <a href="Pages/sega.html" class="btn btn-primary">Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </center>
+  <div class="footer">
+    <div class="card-text footer-text">
+      <p class="creditsTr_1">Sito web realizzato da: Gioele Falaschi, Leonardo Canu, Enrico Marinelli e Samuele Maranghi
+      </p>
+      <p class="creditsTr_2">Fonti: Playstation-Wikipedia, Nintendo-Wikipedia, Xbox-Wikipedia, Sega-Wikipedia, History
+        of Video Game Consoles- Wikipedia</p>
+
+
+    </div>
+  </div>
+
+
+
+<!-- Script bottone lingue-->
+<script>
+  let ITA = document.getElementById('ITA');
+  let ENG = document.getElementById('ENG');
+  ITA.addEventListener('click', () => {
+      ITA.classList.add('activated');
+      ENG.classList.remove('activated');
+  });
+  ENG.addEventListener('click', () => {
+      ENG.classList.add('activated');
+      ITA.classList.remove('activated');
+  });
+
+  </script>
+
+<!------------------------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

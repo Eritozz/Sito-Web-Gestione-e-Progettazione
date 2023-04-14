@@ -1,0 +1,476 @@
+/*===FONT===*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+/*===FONT===*/
+/*=================================================================*/
+/*===CARATTERISTICHE GENERALI===*/
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body::-webkit-scrollbar {   display: none;   }
+/*================================================================*/
+/*===INDEX===*/
+.backgroundindex{   background: linear-gradient(90deg, rgba(63,46,86,1) 0%, rgba(69,63,120,1) 48%, rgba(117,154,171,1) 100%);   }
+.indexfont{  font-family: 'Josefin Sans', sans-serif;   }
+/*=================================================================*/
+/*===NAVBAR===*/
+.navbar{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    position: -webkit-sticky !important;
+    position: sticky !important; 
+    top: 0 !important; 
+    z-index: 3;
+}
+.nav-link{   color:white !important;   }
+.NavImg  {   height: 30px;               }
+
+/*===CAMBIO LINGUA===*/
+.contenitore_bottoni{
+    padding-right: 30px;
+}
+.activated{
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.bottone_lingua{
+    color: white !important;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px !important;
+}
+/*=================================================================*/
+/*===TITLE===*/
+.title_main{
+    font-family: 'New Super Mario Font U', sans-serif !important;
+    font-size: 50px !important;
+}
+.title{
+    color: white;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.titlediv{
+    border-radius: 10px !important;
+    border: 2px solid rgb(44, 16, 109)!important;
+    background-color: purple !important;
+    mix-blend-mode: multiply;
+    padding : 15px;
+    margin-top : 20px;
+}
+/*=================================================================*/
+/*===CARD===*/
+.dimensioneImg{
+    height: 100px;
+    transition: transform .5s;
+    filter: brightness(65%);
+}
+.dimensioneImg:hover{
+    transform: scale(1.1);
+    filter: brightness(100%);
+    animation-name: luccichio;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+}
+.card{
+    border-radius: 10px !important;
+    border: 2px solid rgba(128, 0, 128) !important;
+    background-color: rgba(51, 9, 51, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+    padding-top: 10px;
+    overflow:hidden;
+    position:unset !important;
+}
+.card:hover::before{
+    background-color: white;
+    content:"";
+    position: absolute;
+    z-index: 3;
+    height:800px;
+    top:-50px;
+    rotate: 20deg;
+    width: 10px;
+    filter:blur(8px);
+    transform-origin: top right;
+    right:100%;
+    animation: barrone .9s ease-in-out;
+    opacity: 0;
+}
+.card-body   {   color:white;               }
+.card-img-top{   padding : 10px;              }
+.card-text   {   color:white !important;    }
+/*=================================================================*/
+/*===BOTTONI===*/
+.btn-primary{
+    border-radius: 10px !important;
+    border: 2px solid rgba(128, 0, 128) !important;
+    background-color: rgba(51, 9, 51, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+/*=================================================================*/
+/*===BACKROUND-GRADIENT===*/
+.backgroundps  {  background:linear-gradient(-120deg, #95b9e6, #4b81c3, #0c50a3, #021b3a) no-repeat;  }
+.backgroundxbox{  background: linear-gradient(120deg, rgba(2,73,16,1) 0%, rgba(82,176,67,1) 76%, rgba(223,233,220,1) 100%) no-repeat;  }
+.backgroundnin {  background: linear-gradient(90deg, rgb(0, 183, 255) 0%, rgb(138, 58, 58) 60%, rgb(200, 56, 56) 100%) no-repeat;  }
+.backgroundsg  {  background:linear-gradient(120deg, #cfd6df, #719ed4, #2c6dbb, #2b74ce) no-repeat;  }
+/*=================================================================*/
+/*===FOOTER===*/
+.footer{
+    background-color: rgba(51, 9, 51, 0.3);
+    position: absolute;
+    width:100%;
+    height:100px;
+    margin-top:400px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    border-top: 2px solid rgba(128, 0, 128) !important;
+    text-align: center;
+    padding-top: 25px;
+}
+.footer-text{
+    font-family: 'Public Pixel', sans-serif;
+    font-size:11px;
+}
+/*=================================================================*/
+/*===PAGINA-PLAYSTATION===*/
+.trailerPs{
+    border-radius: 10px;
+    border: 5px solid #3671B8 ;
+}
+.logoPlay{
+    height: 75px; 
+    margin: 30px;
+}
+.footerps{
+    background-color: rgba(25, 9, 51, 0.3);
+    position: relative;
+    width:100%;
+    height:100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    border-top: 2px solid rgb(11, 23, 190) !important;
+    text-align: center;
+    padding-top: 25px;
+}
+/*=================================================================*/
+/*===PAGINA-XBOX===*/
+.trailerXbox{
+    border-radius: 10px;
+    border: 5px solid #368C32 ;
+}
+.logoXbox{
+    height: 75px; 
+    margin: 30px;
+}
+.footerXbox{
+    background-color: rgba(25, 9, 51, 0.3);
+    position: relative;
+    width:100%;
+    height:100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    border-top: 2px solid rgb(6, 126, 16) !important;
+    text-align: center;
+    padding-top: 25px;
+}
+/*=================================================================*/
+/*===PAGINA-NINTENDO===*/
+.trailerPs{
+    border-radius: 10px;
+    border: 5px solid #883C3D ;
+}
+.logoNin{
+    height: 105px; 
+    margin: 30px;
+}
+.footerNin{
+    background-color: rgba(25, 9, 51, 0.3);
+    position: relative;
+    width:100%;
+    height:100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    border-top: 2px solid rgb(131, 49, 49) !important;
+    text-align: center;
+    padding-top: 25px;
+}
+/*=================================================================*/
+/*===PAGINA-SEGA===*/
+.trailerSega{
+    border-radius: 10px;
+    border: 5px solid #6998D1 ;
+}
+.logoSega{
+    height: 150px; 
+    margin: 30px;
+}
+.footerSega{
+    background-color: rgba(25, 9, 51, 0.3);
+    position: relative;
+    width:100%;
+    height:100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    border-top: 2px solid rgb(54, 66, 233) !important;
+    text-align: center;
+    padding-top: 25px;
+}
+/*=================================================================*/
+/*===PAGINE-CARATTERISTICHE-GENERALI===*/
+.titleConsole{
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 75px;
+    color: white;
+}
+.testoDesc{
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 75px;
+    color: white;
+
+}
+
+/*.hrGen{
+    margin-top: 30px;
+    margin-bottom: 30px;
+} */
+/*=================================================================*/
+.hover-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+/*=================================================================*/
+/*===ANIMAZIONI===*/
+@keyframes barrone {
+    to{
+        opacity: 1;
+        right:-100%;
+    }
+}
+@keyframes luccichio{
+    0%{
+        filter: brightness(65%);
+    }
+    50%{
+        filter: brightness(150%);
+    }
+    100%{
+        filter: brightness(100%);
+    }
+}
+/*=================================================================*/
+.language {
+    position: relative;
+    width: 120px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.language-selected {
+    display: flex;   
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.language ul {
+    position: absolute;
+    width: 140px;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    padding-top: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.language ul li {
+    list-style: none;
+}
+.language ul li a {
+    display: block;
+    color: #252525;
+    padding: 5px 10px;
+}
+.language ul li:hover {
+    background-color: #f8f8f8;
+}
+.language:hover ul {
+    display: block;
+}
+/*=================================================================*/
+/*===PAGINA-PLAYSTATION Pt.2===*/
+.tr_price_ps1{
+    font-weight: bold;
+}
+.tr_units_ps1{
+    font-weight: bold; 
+}
+.tr_price_ps2{
+    font-weight: bold;
+}
+.tr_units_ps2{
+    font-weight: bold; 
+}
+.tr_price_psp{
+    font-weight: bold;
+}
+.tr_units_psp{
+    font-weight: bold; 
+}
+.tr_price_ps3{
+    font-weight: bold;
+}
+.tr_units_ps3{
+    font-weight: bold; 
+}
+.tr_price_ps4{
+    font-weight: bold;
+}
+.tr_units_ps4{
+    font-weight: bold; 
+}
+.tr_price_ps5{
+    font-weight: bold;
+}
+.tr_units_ps5{
+    font-weight: bold; 
+}
+/*=================================================================*/
+/*===PAGINA-XBOX Pt.2===*/
+.tr_price_xbox{
+    font-weight: bold;
+}
+.tr_units_xbox{
+    font-weight: bold; 
+}
+.tr_price_xbox360{
+    font-weight: bold;
+}
+.tr_units_xbox360{
+    font-weight: bold; 
+}
+.tr_price_xboxOne{
+    font-weight: bold;
+}
+.tr_units_xboxOne{
+    font-weight: bold; 
+}
+.tr_price_xboxSeriesX{
+    font-weight: bold;
+}
+.tr_units_xboxSeriesX{
+    font-weight: bold; 
+}
+/*=================================================================*/
+/*===PAGINA-NINTENDO Pt.2===*/
+.tr_price_NES{
+    font-weight: bold; 
+}
+.tr_units_NES{
+    font-weight: bold; 
+}
+.tr_price_gameBoy{
+    font-weight: bold; 
+}
+.tr_units_gameBoy{
+    font-weight: bold; 
+}
+.tr_price_SNES{
+    font-weight: bold; 
+}
+.tr_units_SNES{
+    font-weight: bold; 
+}
+.tr_price_nin64{
+    font-weight: bold; 
+}
+.tr_units_nin64{
+    font-weight: bold; 
+}
+.tr_price_gba{
+    font-weight: bold; 
+}
+.tr_units_gba{
+    font-weight: bold; 
+}
+.tr_price_ninCube{
+    font-weight: bold; 
+}
+.tr_units_ninCube{
+    font-weight: bold; 
+}
+.tr_price_ninDS{
+    font-weight: bold; 
+}
+.tr_units_ninDS{
+    font-weight: bold; 
+}
+.tr_price_wii{
+    font-weight: bold; 
+}
+.tr_units_wii{
+    font-weight: bold; 
+}
+.tr_price_wiiu{
+    font-weight: bold; 
+}
+.tr_units_wiiu{
+    font-weight: bold; 
+}
+.tr_price_nin3DS{
+    font-weight: bold; 
+}
+.tr_units_nin3DS{
+    font-weight: bold; 
+}
+.tr_price_ninSwitch{
+    font-weight: bold; 
+}
+.tr_units_ninSwitch{
+    font-weight: bold; 
+}
+/*=================================================================*/
+/*===PAGINA-SEGA Pt.2===*/
+.tr_price_sg1000{
+    font-weight: bold;
+}
+.tr_units_sg1000{
+    font-weight: bold; 
+}
+.tr_price_masterSystem{
+    font-weight: bold;
+}
+.tr_units_masterSystem{
+    font-weight: bold; 
+}
+.tr_price_genesis{
+    font-weight: bold;
+}
+.tr_units_genesis{
+    font-weight: bold; 
+}
+.tr_price_gameGear{
+    font-weight: bold;
+}
+.tr_units_gameGear{
+    font-weight: bold; 
+}
+.tr_price_saturn{
+    font-weight: bold;
+}
+.tr_units_saturn{
+    font-weight: bold; 
+}
+.tr_price_dreamcast{
+    font-weight: bold;
+}
+.tr_units_dreamcast{
+    font-weight: bold; 
+}
